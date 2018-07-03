@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
   end
 
   def Show::most_popular_show
+    Show.
   end
 
   def Show::least_popular_show
@@ -23,5 +24,5 @@ class Show < ActiveRecord::Base
   end
 
   def Show::shows_by_alphabetical_order
-  end     
+  end
 end
