@@ -2,11 +2,11 @@ class Show < ActiveRecord::Base
 
 
   def Show::highest_rating
-    Show.where(:rating).maximum
+    Show.maximum(:rating)
   end
 
   def Show::most_popular_show
-    Show.maximum(:rating)
+    Show.where(:rating).maximum  
   end
 
   def Show::least_popular_show
